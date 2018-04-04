@@ -1,0 +1,8 @@
+{
+  "name": "Dimensão App",
+  "app_id": "6b49980a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
