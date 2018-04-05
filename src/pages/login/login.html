@@ -1,17 +1,18 @@
 <ion-content padding>
-  <div class="">
-    <label for="email">Digite seu email</label>
-    <input type="email" />
-  </div>
 
-  <div class="">
-    <label for="password">Digite sua senha</label>
-    <input type="password" />
-  </div>
-
-  <div class="">
-    <button ion-button block success (click)="auth()">Entrar no sistema</button>
-  </div>
-
-
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Digite seu email</ion-label>
+      <ion-input [(ngModel)]="session.email" type="email"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label stacked>Digite sua senha</ion-label>
+      <ion-input [(ngModel)]="session.password" type="password"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <button ion-button full (click)="auth()">Entrar no sistema</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

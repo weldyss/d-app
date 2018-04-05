@@ -1,14 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Bem-vindo, {{user}}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-list>
+    <button ion-item (click)="goToCompany(1)">Empresa 1</button>
+    <button ion-item (click)="goToCompany(1)">Empresa 2</button>
+    <button ion-item (click)="goToCompany(1)">Empresa 3</button>
+    <button ion-item (click)="goToCompany(1)">Empresa 4</button>
+    <button ion-item (click)="goToCompany(1)">Empresa 5</button>
+    <button ion-item (click)="goToCompany(1)">Empresa 6</button>
+  </ion-list>
 </ion-content>
